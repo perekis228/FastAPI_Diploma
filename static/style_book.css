@@ -1,0 +1,8 @@
+.title {
+    text-align: center
+}
+
+.desc {
+    border: 3px #000000  double;
+    border-radius: 5px;
+}

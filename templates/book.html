@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/App/static/style_book.css') }}">">
+</head>
+<body>
+    <h2 class="title">{{book.title}}</h2>
+    <p>Жанр: {{book.genre}}</p>
+    <p>Автор: {{book.author}}</p>
+    <br>
+    <p>Описание:</p>
+    <div class="desc">
+        {{book.description}}
+    </div>
+</body>
+</html>
