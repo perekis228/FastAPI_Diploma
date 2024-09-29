@@ -10,19 +10,19 @@ from slugify import slugify
 router = APIRouter(prefix='/books', tags=['books'])
 
 @router.get('/books')
-async def all_users(db: Annotated[Session, Depends(get_db)]):
+async def all_books(db: Annotated[Session, Depends(get_db)]):
     books = db.scalars(select(Books)).all()
     return books
 
 @router.get('/title')
-async def user_by_id(db: Annotated[Session, Depends(get_db)], title: str):
+async def book_by_title(db: Annotated[Session, Depends(get_db)], title: str):
     book = db.scalar(select(Books).where(Books.title == title))
     if book is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Book was not found")
     return book
 
 @router.post('/create')
-async def create_user(db: Annotated[Session, Depends(get_db)], create_book: CreateBook):
+async def create_book(db: Annotated[Session, Depends(get_db)], create_book: CreateBook):
     db.execute(insert(Books).values(title=create_book.title,
                                     author=create_book.author,
                                     genre=create_book.genre,
@@ -32,7 +32,7 @@ async def create_user(db: Annotated[Session, Depends(get_db)], create_book: Crea
     return {'status_code': status.HTTP_201_CREATED, 'transaction': 'Successful'}
 
 @router.put('/update')
-async def update_user(db: Annotated[Session, Depends(get_db)], book_id: int, update_book: UpdateBook):
+async def update_book(db: Annotated[Session, Depends(get_db)], book_id: int, update_book: UpdateBook):
     book = db.scalar(select(Books).where(Books.id == book_id))
     if book is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Book was not found")
@@ -46,7 +46,7 @@ async def update_user(db: Annotated[Session, Depends(get_db)], book_id: int, upd
     return {'status_code': status.HTTP_200_OK, 'transaction': 'Book update is successful!'}
 
 @router.delete('/delete')
-async def delete_user(db: Annotated[Session, Depends(get_db)], user_id: int):
+async def delete_book(db: Annotated[Session, Depends(get_db)], user_id: int):
     book = db.scalar(select(Books).where(Books.id == user_id))
     if book is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Book was not found")
