@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/books.css') }}">
 </head>
 <body>
-    <h1>Books</h1>
-    <ul>
-      {% for book in books %}
-        <li>{{ book.title }} by {{ book.author }}</li>
-      {% endfor %}
-    </ul>
+    {% for book in books %}
+        <a href="/{{book.title}}">
+            <div class="book-show">
+                <h2>{{book.title}}</h2>
+                <div class="genre">
+                    <p>{{book.genre}}</p>
+                </div>
+                <div class="author">
+                    <p>{{book.author}}</p>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
 </body>
 </html>
