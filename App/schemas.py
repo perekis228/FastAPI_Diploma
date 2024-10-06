@@ -9,3 +9,15 @@ class CreateBook(BaseModel):
 
 class UpdateBook(BaseModel):
     description: str
+
+class CreateUser(BaseModel):
+    username: str
+    password: str
+    password_repeat: str
+    age: str
+    admin: bool
+
+class UpdateUser(BaseModel):
+    username: str
+    password: str
+    age: str

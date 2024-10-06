@@ -4,22 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8782c855-19fb-4baa-9611-ba55747c0909" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/FastAPI_Diploma.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/backend/db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/backend/db_dependes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/models/books.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/routers/books.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/schemas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/books.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/books.html" afterDir="false" />
+    <list default="true" id="8782c855-19fb-4baa-9611-ba55747c0909" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/App/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/models/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/routers/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/models/books.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/models/books.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/routers/books.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/routers/books.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskmanager.db" beforeDir="false" afterPath="$PROJECT_DIR$/taskmanager.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/books.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,15 +43,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.books.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.books.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\PythonUniversity\FastAPI_Diploma" />
@@ -76,6 +73,19 @@
       <option name="presentableId" value="Default" />
       <updated>1727606349993</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update">
+      <option name="closed" value="true" />
+      <created>1727613826488</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727613826488</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>

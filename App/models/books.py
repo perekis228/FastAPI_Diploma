@@ -11,5 +11,6 @@ class Books(Base):
     description = Column(String)
     slug = Column(String, unique=True, index=True)
 
+
 from sqlalchemy.schema import CreateTable
 print(CreateTable(Books.__table__))
